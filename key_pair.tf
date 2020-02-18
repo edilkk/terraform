@@ -1,4 +1,4 @@
 resource "aws_key_pair" "terraform_april" {
   key_name   = "terraform_april"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZMsz5E6MHqdTwo4qA3wKjBya3hiNvoT36ynQIWH/itkdyB/smcSOlNnMmIggu6/3yyWBoxoDI4v6jCKLa3hb+90GQMZxJhLepD79cMqni7698dg8cT4nHzgSHqYJiWjKOLfzbfFYvKGFyezNzxDnh6cClthRIb6KEuEhOZKMUQhCyb2F8Bc1CgL5ud4FwKIRCl05sSCBQP4lDcQkRq6S3rDJTM6Q2qv96gx7i1nzPBrvoiimYCsSxNZaYrQDd/nx8nOxtdFpB1ltcjWKs1vU5SOi4I1UpHIzxgDWtWTSTxmUXNb1VyLsXG7fCtXTpj5c4/PAgATmi5dq9D8Dk6uXN root@ip-172-31-40-11.us-east-2.compute.internal"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
