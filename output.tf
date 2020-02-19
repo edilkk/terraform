@@ -5,7 +5,7 @@ output "bucketname" {
   value = "${aws_s3_bucket.b.bucket}"
 }
 output "username" {
-  value = "${ec2-user}"
+  value = "${ec-user2}"
 }
 output "public_ip" {
   value = "${aws_instance.web1.public_ip}"
